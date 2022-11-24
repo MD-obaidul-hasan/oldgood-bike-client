@@ -1,7 +1,7 @@
 import React from 'react';
-import bike from '../../../assets/image/yamaha-xmax-first1.jpg'
-import herobike from '../../../assets/image/hero-maestro-edge-125-price-bangladesh.png-400x400.jpg'
-import bajajbike from '../../../assets/image/Bajaj_Chetak_Electric_Scooter_black.webp'
+import bike from '../../../assets/image/yamaha-symbols-png-logo-2.png'
+import herobike from '../../../assets/image/bajaj-logo-bajaj-auto-logo-hd-png-download.png'
+import bajajbike from '../../../assets/image/LOGO-honda-motor-company-honda-logo-honda-angle-text-logo.png'
 import Catagori from './Catagori';
 
 const Categories = () => {
@@ -10,22 +10,22 @@ const Categories = () => {
         {
             id: 1,
 
-            name: 'yahama bike',
-            description: 'this iksss',
+            name: 'Yahama Bike',
+            description: 'YAHAMA secondhand but good quality bike are here. As like a new bike, some kilo ride. here can get letest anytypeof cc bike and beautyfull scooty.',
             img: bike
         },
         {
             id: 2,
 
-            name: 'yahama bike',
-            description: 'this iksss',
+            name: 'Honda Bike',
+            description: 'HONDA secondhand but good quality bike are here. As like a new bike, some kilo ride. here can get letest anytypeof cc bike and beautyfull scooty.',
             img: bajajbike
         },
         {
             id: 3,
 
-            name: 'yahama bike',
-            description: 'this iksss',
+            name: 'Bajaj Bike',
+            description: 'Bajaj secondhand but good quality bike are here. As like a new bike, some kilo ride. here can get letest anytypeof cc bike and beautyfull scooty.',
             img: herobike
         }
     ]
