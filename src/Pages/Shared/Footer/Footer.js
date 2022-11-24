@@ -72,7 +72,7 @@ const Footer = () => {
     </div>
    
   <div className='text-center mt-32  text-primary'>
-    <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+    <p>Copyright © 2022 - All right reserved by OldGood Bike</p>
   </div>
 </footer>
     );
