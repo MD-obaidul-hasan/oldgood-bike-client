@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../../../assets/image/honda-motorcycle-cb-shine-381509737-puebz.webp'
-import images from '../../../assets/image/bajaj-pulsar-as150-img01.jpg'
+import images from '../../../assets/image/hero-maestro-edge-125-price-bangladesh.png-400x400.jpg'
+import PrimarryButton from '../../../Components/PrimarryButton/PrimarryButton';
 
 const About = () => {
     return (
@@ -12,12 +13,14 @@ const About = () => {
     </div>
     
     <div className='w-1/2'>
-        <p className='  text-2xl font-bold text-orange-600'>About Myself</p>
+        <p className='  text-2xl font-bold text-orange-600'>About Ourself</p>
 
-      <h1 className=" my-5 text-5xl font-bold">I am quilified <br/>
-      & of exprience <br/> in this field</h1>
-      <p className="py-6">Event decoration need to mange this event arrage good looking. i am a expert for decoration any typr of event decorate.</p>
-      <button className="btn btn-primary">Get More info</button>
+      <h1 className=" my-5 text-5xl font-bold">We arrange <br/>
+      old but good quality <br/>
+      seconhand bike <br/> for our bikers </h1>
+      <p className="py-6">Here our buyers , seller can get eassy recent model old but good quality bike . We try to give our consumer vest efforsts. so keep with us and chose your chose bike in short hand price. thanks you.</p>
+      {/* <button className="btn btn-primary">Get More info</button> */}
+      <PrimarryButton> Get More info</PrimarryButton>
     </div>
   </div>
 </div>

@@ -57,7 +57,7 @@ const Footer = () => {
     <Link to="/" className="link link-hover">Advertisement</Link>
   </div> 
   <div>
-    <span className="footer-title">Company</span> 
+    <span className="footer-title ">Company</span> 
     <Link to="/"className="link link-hover">About us</Link>
     <Link to="/" className="link link-hover">Contact</Link>
     <Link to="/" className="link link-hover">Jobs</Link>
@@ -71,7 +71,7 @@ const Footer = () => {
   </div>
     </div>
    
-  <div className='text-center mt-32'>
+  <div className='text-center mt-32  text-primary'>
     <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
   </div>
 </footer>

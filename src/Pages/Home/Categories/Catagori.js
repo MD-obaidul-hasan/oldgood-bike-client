@@ -1,4 +1,5 @@
 import React from 'react';
+import PrimarryButton from '../../../Components/PrimarryButton/PrimarryButton';
 
 const Catagori = ({catagori}) => {
     const { name, description, img} = catagori;
@@ -11,7 +12,8 @@ const Catagori = ({catagori}) => {
                 <h2 className="card-title">{name}</h2>
                 <p>{description}</p>
                 <div className="card-actions">
-                    <button className="btn btn-primary">See More</button>
+                    {/* <button className="btn btn-primary">See More</button> */}
+                    <PrimarryButton>See  Details</PrimarryButton>
                 </div>
             </div>
         </div>
