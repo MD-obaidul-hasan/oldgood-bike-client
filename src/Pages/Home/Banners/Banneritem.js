@@ -1,5 +1,5 @@
 import React from 'react';
-import PrimarryButton from '../../../Components/PrimarryButton/PrimarryButton';
+// import PrimarryButton from '../../../Components/PrimarryButton/PrimarryButton';
 
 const BannerItem = ({slide}) => {
     const {image, id, prev, next} =slide;
