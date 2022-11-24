@@ -3,8 +3,7 @@ import pic from '../../../assets/image/final.webp';
 import { DayPicker } from 'react-day-picker';
 import {format} from 'date-fns'
 
-const BikecaBanner = () => {
-    const [selectedDate,setSelectedDate] = useState(new Date());
+const BikecaBanner = ({selectedDate, setSelectedDate}) => {
     return (
         <header className='my-6'>
             <div className="hero ">
@@ -15,7 +14,7 @@ const BikecaBanner = () => {
                         mode='single'
                         selected={selectedDate}
                         onSelect={setSelectedDate}></DayPicker>
-                        <p>You have selected date: {format(selectedDate, 'PP')}</p>
+                        {/* <p>You have selected date: {format(selectedDate, 'PP')}</p> */}
                         
                     </div>
                 </div>
