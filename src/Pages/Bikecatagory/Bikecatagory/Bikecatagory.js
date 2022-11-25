@@ -10,7 +10,8 @@ const Bikecatagory = () => {
             <h2>hi</h2>
             <BikecaBanner 
             selectedDate={selectedDate}
-            setSelectedDate={setSelectedDate}></BikecaBanner>
+            setSelectedDate={setSelectedDate}
+            ></BikecaBanner>
             <Availablecata
              selectedDate={selectedDate}
              ></Availablecata>

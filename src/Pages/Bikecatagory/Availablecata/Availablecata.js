@@ -28,6 +28,7 @@ const Availablecata = ( {selectedDate}) => {
             
             { bike &&
                 <BookingModal
+                selectedDate={selectedDate}
             bike={bike}
             ></BookingModal>}
         </section>
