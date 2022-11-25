@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BikeBookoption = ({ catagoriesBike }) => {
+const BikeBookoption = ({ catagoriesBike, setBike }) => {
     const { name, location,resaleprice,orginalprice,year_of_use,seller_Name, image, slots } = catagoriesBike;
     return (
         <div className="card  shadow-xl">
@@ -17,7 +17,11 @@ const BikeBookoption = ({ catagoriesBike }) => {
                 <p>{slots.length > 0 ? slots[0] : 'Try Another day'} post available</p>
                 <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} </p>
                 <div className="card-actions">
-                    <button className="btn btn-primary text-white">Book Bike</button>
+                    {/* <button className="btn btn-primary text-white">Book Bike</button> */}
+                    <label htmlFor="booking-modal"
+                     className="btn btn-primary text-white"
+                     onClick={() => setBike(catagoriesBike)}
+                     >Book Bike</label>
                 </div>
             </div>
         </div>

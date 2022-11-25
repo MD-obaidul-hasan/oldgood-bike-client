@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import {format} from 'date-fns'
 import BikeBookoption from './BikeBookoption';
+import BookingModal from '../BookingModal/BookingModal';
+
 
 const Availablecata = ( {selectedDate}) => {
-    const [catagoriesBikes, setCatagoriesbike] = useState([])
+    const [catagoriesBikes, setCatagoriesbike] = useState([]);
+    const [bike, setBike] = useState(null);
 
     useEffect(() =>{
         fetch('catagoriesbike.json')
@@ -18,9 +21,15 @@ const Availablecata = ( {selectedDate}) => {
                     catagoriesBikes.map(option => <BikeBookoption
                     key={option._id}
                     catagoriesBike={option}
+                    setBike={setBike}
                     ></BikeBookoption>)
                 }
             </div>
+            
+            { bike &&
+                <BookingModal
+            bike={bike}
+            ></BookingModal>}
         </section>
     );
 };
