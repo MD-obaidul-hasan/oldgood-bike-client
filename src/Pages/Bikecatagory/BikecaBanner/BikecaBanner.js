@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import pic from '../../../assets/image/final.webp';
 import { DayPicker } from 'react-day-picker';
-import {format} from 'date-fns'
+// import {format} from 'date-fns'
 
 const BikecaBanner = ({selectedDate, setSelectedDate}) => {
     return (

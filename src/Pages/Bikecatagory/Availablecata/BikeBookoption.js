@@ -18,7 +18,9 @@ const BikeBookoption = ({ catagoriesBike, setBike }) => {
                 <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} </p>
                 <div className="card-actions">
                     {/* <button className="btn btn-primary text-white">Book Bike</button> */}
-                    <label htmlFor="booking-modal"
+                    <label
+                    disable={slots.length === 0 }
+                    htmlFor="booking-modal"
                      className="btn btn-primary text-white"
                      onClick={() => setBike(catagoriesBike)}
                      >Book Bike</label>
