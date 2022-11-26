@@ -3,12 +3,13 @@ import Dashbordlayout from "../../Layout/Dashbordlayout";
 import Main from "../../Layout/Main";
 import Bikecatagory from "../../Pages/Bikecatagory/Bikecatagory/Bikecatagory";
 import Blog from "../../Pages/Blog/Blog";
-import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
+import Dashboard from "../../Pages/Dashboard/Dashboard";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Myoderbike from "../../Pages/Dashboard/Myoderbike/Myoderbike"
+import AllUsers from "../../Pages/Dashboard/AllUsers/AllUSERS.JS";
 
 
 const router = createBrowserRouter([
@@ -46,7 +47,11 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard',
                 element: <Myoderbike></Myoderbike>
-            }
+            },
+            {
+                path: '/dashboard/allusers',
+                element: <AllUsers></AllUsers>
+            },
         ]
     }
 ])
