@@ -7,7 +7,7 @@ const Blog = () => {
     return (
         <div>
             <div><h2 className='text-xl font-bold text-orange uppercase items-center text-center'> Welcome to our blog</h2></div>
-        <div className='grid grid-cols-2 gap-4 my-20'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 my-20'>
             
             <div className="card w-96 bg-gray-500 text-primary-content">
                 

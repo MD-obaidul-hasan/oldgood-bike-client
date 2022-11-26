@@ -16,7 +16,7 @@ const Catalog = () => {
                     <div>
                         <h4 className='text-lg text-primary font-bold'>CATALOG</h4>
                         <h1 className=" text-gray text-4xl font-bold">Catalog are here</h1>
-                        <p className=" text-gray py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className=" text-gray py-6">Here our buyers , seller can get eassy recent model old but good quality bike . We try to give our consumer vest efforsts.</p>
                         {/* <button className="btn btn-primary">Get Started</button> */}
                         <PrimarryButton> Catagory Details</PrimarryButton>
                     </div>
