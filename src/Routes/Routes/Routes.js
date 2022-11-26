@@ -9,6 +9,7 @@ import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Myoderbike from "../../Pages/Dashboard/Myoderbike/Myoderbike"
+import Not from "../../Pages/Not/Not";
 // import AllUsers from "../../Pages/Dashboard/AllUsers/AllUSERS.JS";
 
 
@@ -53,7 +54,12 @@ const router = createBrowserRouter([
             //     element: <AllUsers></AllUsers>
             // },
         ]
+    },
+    {
+        path: '*', 
+        element: <Not></Not>
     }
+
 ])
 
 export default router;
