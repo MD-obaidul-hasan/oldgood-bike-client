@@ -1,3 +1,30 @@
+# OldGood_Bike Website
+This website need for use about seconhand bike  needed.this site build up with react and mongodb for free switable usew for client. we use mongodb server for server site.
+here client can give review ,so new client can see previous clients comment and review. i hope it become swetable for booking event.
+
+# OldGood_Bike client site
+
+This site we are make it for switable use for client and it madeby react.js . Client site deploy in fire base.so user can eassy can visit and assess this site. Here user can chose any type of heconhand bike give it this site services section. Client can use it freely ,they can booking and give review.can eassy login and signin.
+
+# OldGood_Bike serversite
+This webpage serversite we deploy it vercel. so it make this site so esser and we use mongo db server. so client become switable for use this service. client data security have their.
+
+# Details about OldGood_Bike 
+1-: Client can visit our site and they can see our diffent type of catagory bike, my info contract and last home page can see servises.
+2-: Client can visit our services details . so they visit our servises page and can see more about informatin in details page.
+3-: For booking client need first login our page. if not login rthey can signup eassy also can signup in google account. it eassy process.
+4-: Client can give their review this review page and give rating for happy services.here need login forst must needed. they can use pictur foir services.
+5-: Once a user is logged in, he/she will see more options like My reviews, Add product, and the logout button in the navbar.
+
+#  OldGood_Bike website live link
+https://event-decco.web.app/
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
