@@ -2,8 +2,10 @@ import React from 'react';
 import image from '../../../assets/image/honda-motorcycle-cb-shine-381509737-puebz.webp'
 import images from '../../../assets/image/hero-maestro-edge-125-price-bangladesh.png-400x400.jpg'
 import PrimarryButton from '../../../Components/PrimarryButton/PrimarryButton';
+import useTitle from '../../../hooks/useTitle';
 
 const About = () => {
+  useTitle('Home')
     return (
         <div className="hero my-20">
   <div className="hero-content flex-col lg:flex-row">

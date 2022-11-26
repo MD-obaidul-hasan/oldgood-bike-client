@@ -1,8 +1,10 @@
 import { async } from '@firebase/util';
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
+import useTitle from '../../../hooks/useTitle';
 
 const AllUsers = () => {
+    useTitle('AllUser')
     const { data: users = [] } = useQuery({
         queryKey: ['users'],
         queryFn: async () => {

@@ -1,8 +1,10 @@
 // import {useQuery} from '@tanstack/react-query';
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../Contextx/AuthProvider';
+import useTitle from '../../../hooks/useTitle';
 
 const Myoderbike = () => {
+    useTitle('Dashboard')
     const  {user} = useContext(AuthContext);
     const url = `http://localhost:5000/bookings?email=${user?.email}`;
 
