@@ -1,26 +1,38 @@
-// import {useQuery} from '@tanstack/react-query';
-import React, { useEffect, useState } from 'react';
+
+import React, {  useState } from 'react';
 import {format} from 'date-fns'
 import BikeBookoption from './BikeBookoption';
 import BookingModal from '../BookingModal/BookingModal';
+import { useQuery } from '@tanstack/react-query';
 
 
 const Availablecata = ( {selectedDate}) => {
-    const [catagoriesBikes, setCatagoriesbike] = useState([]);
     const [bike, setBike] = useState(null);
 
-    // const {data:catagoriesBikes = [] } = useQuery({
-    //     queryKey:['gooldbike'],
-    //     queryFn: () => fetch('http://localhost:5000/gooldbike')
+
+    // const { data:catagoriesBikes = []} = useQuery({
+    //     queryKey: ['bikes'],
+    //     queryFn: () => fetch('http://localhost:5000/bikes')
     //     .then(res => res.json())
     // })
 
 
-    useEffect(() =>{
-        fetch('catagoriesbike.json')
-        .then(res => res.json())
-        .then(data => setCatagoriesbike(data))
-    },[])
+    const { data : catagoriesBikes = []} = useQuery({
+        queryKey: ['bikes'],
+        queryFn: async() => {
+         const res =   await fetch('http://localhost:5000/bikes');
+        const data = await res.json();
+        return data
+        }
+    })
+   
+
+
+    // useEffect(() =>{
+    //     fetch('http://localhost:5000/bikes')
+    //     .then(res => res.json())
+    //     .then(data => setCatagoriesbike(data))
+    // },[])
 
     return (
         <section className='my-16'>

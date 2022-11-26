@@ -22,8 +22,8 @@ const AllUsers = () => {
                             <th></th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Favor</th>
-                            <th>Favorate color</th>
+                            <th>Admin</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,8 +34,8 @@ const AllUsers = () => {
                             <th>{i}</th>
                             <td>{user.name}</td>
                             <td>{user.email}</td>
-                            <td>Blue</td>
-                            <td>Blue</td>
+                            <td><button className='btn btn-xs btn-primary'>Make admin</button>Make admin</td>
+                            <td><button className='btn btn-xs btn-denger'>Delect</button>Blue</td>
                         </tr>)
                         }
                         

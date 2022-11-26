@@ -24,7 +24,8 @@ const handleSignUp = (data) =>{
         }
         updateUser(userInfo)
         .then(() => {
-            saveUser(data.name,data.email);
+            navigate('/');
+            // saveUser(data.name,data.email);
 
         })
         .catch(err => console.log(err));

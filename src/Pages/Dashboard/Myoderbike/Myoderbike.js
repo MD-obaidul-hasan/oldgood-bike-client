@@ -1,4 +1,4 @@
-import {useQuery} from '@tanstack/react-query';
+// import {useQuery} from '@tanstack/react-query';
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../Contextx/AuthProvider';
 
@@ -6,14 +6,14 @@ const Myoderbike = () => {
     const  {user} = useContext(AuthContext);
     const url = `http://localhost:5000/bookings?email=${user?.email}`;
 
-    const {data: bookings = []} = useQuery({
-        queryKey: ['bookings', user?.email],
-        queryFn: async () => {
-            const res = await fetch(url);
-            const data = await res.json();
-            return data;
-        }
-    })
+    // const {data: bookings = []} = useQuery({
+    //     queryKey: ['bookings', user?.email],
+    //     queryFn: async () => {
+    //         const res = await fetch(url);
+    //         const data = await res.json();
+    //         return data;
+    //     }
+    // })
 
     return (
         <div>
@@ -31,7 +31,7 @@ const Myoderbike = () => {
                     </thead>
                     <tbody>
                         
-                        {
+                        {/* {
                             bookings.map((booking, i) =><tr key={booking._id}>
                                 <th>{i+1}</th>
                                 <td>{booking.name}</td>
@@ -39,7 +39,7 @@ const Myoderbike = () => {
                                 <td>{booking.date}</td>
                                 <td>{booking.slot}</td>
                             </tr>)
-                        }
+                        } */}
                         
                         
                     </tbody>

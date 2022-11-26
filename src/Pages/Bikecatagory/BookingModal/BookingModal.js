@@ -7,6 +7,8 @@ const BookingModal = ({ bike,setBike, selectedDate }) => {
     const { name, slots } = bike; // bike is booking option
     const date = format(selectedDate, 'PP');
     const {user} = useContext(AuthContext);
+
+
 const handleBooking = event =>{
     event.preventDefault();
     const form = event.target;
@@ -16,7 +18,7 @@ const handleBooking = event =>{
     const phone = form.phone.value;
     const price = form.price.value;
     const metting = form.metting.value;
-    const booking ={
+    const booking = {
         bookDate: date,
         bike: name,
         consumer:name,
@@ -36,10 +38,12 @@ const handleBooking = event =>{
     .then(res => res.json())
     .then(data => {
         console.log(data);
-        if(data.acknowledged){
-            setBike(null);
+        setBike(null);
         toast.success('Booking Confirmed')
-        }
+        // if(data.acknowledged){
+        //     setBike(null);
+        // toast.success('Booking Confirmed')
+        // }
     })
     
 }
