@@ -1,3 +1,4 @@
+// import {useQuery} from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react';
 import {format} from 'date-fns'
 import BikeBookoption from './BikeBookoption';
@@ -8,11 +9,19 @@ const Availablecata = ( {selectedDate}) => {
     const [catagoriesBikes, setCatagoriesbike] = useState([]);
     const [bike, setBike] = useState(null);
 
+    // const {data:catagoriesBikes = [] } = useQuery({
+    //     queryKey:['gooldbike'],
+    //     queryFn: () => fetch('http://localhost:5000/gooldbike')
+    //     .then(res => res.json())
+    // })
+
+
     useEffect(() =>{
         fetch('catagoriesbike.json')
         .then(res => res.json())
         .then(data => setCatagoriesbike(data))
     },[])
+
     return (
         <section className='my-16'>
             <p className='text-center text-secondary font-bold'>You have selected  {format(selectedDate, 'PP')} </p>

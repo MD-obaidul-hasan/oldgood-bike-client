@@ -1,9 +1,12 @@
 import { format } from 'date-fns';
-import React from 'react';
+import React, { useContext } from 'react';
+import toast from 'react-hot-toast';
+import { AuthContext } from '../../../Contextx/AuthProvider';
 
 const BookingModal = ({ bike,setBike, selectedDate }) => {
     const { name, slots } = bike; // bike is booking option
     const date = format(selectedDate, 'PP');
+    const {user} = useContext(AuthContext);
 const handleBooking = event =>{
     event.preventDefault();
     const form = event.target;
@@ -23,8 +26,22 @@ const handleBooking = event =>{
         metting,
     }
 
-    console.log(booking);
-    setBike(null);
+    fetch('http://localhost:5000/bookings', {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(booking)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+        if(data.acknowledged){
+            setBike(null);
+        toast.success('Booking Confirmed')
+        }
+    })
+    
 }
 
     return (
@@ -46,8 +63,8 @@ const handleBooking = event =>{
                                  >{slot}</option> )
                             }
                         </select>
-                        <input  name="name" type="text" placeholder="Your Name" className="input w-full input-bordered" />
-                        <input  name="email" type="email" placeholder="Email Address" className="input w-full input-bordered" />
+                        <input  name="name" type="text" defaultValue={user?.displayName} disabled placeholder="Your Name" className="input w-full input-bordered" />
+                        <input  name="email" type="email" defaultValue={user?.email} disabled placeholder="Email Address" className="input w-full input-bordered" />
                         <input  name="item name"type="text" placeholder="Item Name" className="input w-full input-bordered" />
                         <input  name="price"type="text" placeholder="Price" className="input w-full input-bordered" />
                         <input  name="phone"type="text" placeholder="Your Phone Number" className="input w-full input-bordered" />

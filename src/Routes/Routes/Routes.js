@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Dashbordlayout from "../../Layout/Dashbordlayout";
 import Main from "../../Layout/Main";
 import Bikecatagory from "../../Pages/Bikecatagory/Bikecatagory/Bikecatagory";
 import Blog from "../../Pages/Blog/Blog";
@@ -7,6 +8,7 @@ import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Myoderbike from "../../Pages/Dashboard/Myoderbike/Myoderbike"
 
 
 const router = createBrowserRouter([
@@ -39,7 +41,13 @@ const router = createBrowserRouter([
     },
     {
         path: '/dashboard',
-        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
+        element: <PrivateRoute><Dashbordlayout></Dashbordlayout></PrivateRoute>,
+        children: [
+            {
+                path: '/dashboard',
+                element: <Myoderbike></Myoderbike>
+            }
+        ]
     }
 ])
 
