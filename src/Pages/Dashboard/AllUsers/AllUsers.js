@@ -36,9 +36,9 @@ const AllUsers = () => {
                             <th>{i}</th>
                             <td>{user.name}</td>
                             <td>{user.email}</td>
-                            <td><button className='btn btn-xs btn-primary'>Make admin</button>Make admin</td>
-                            <td><button className='btn btn-xs btn-denger'>Delect</button>Blue</td>
-                        </tr>)
+                            <td><button className='btn btn-xs btn-primary'>Make admin</button></td>
+                            <td><button className='btn btn-xs btn-denger'>Delect</button></td>
+                            </tr>)
                         }
                         
                         

@@ -1,8 +1,29 @@
-import React from 'react';
+import { useQuery } from '@tanstack/react-query';
+import React, { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import { AuthContext } from '../Contextx/AuthProvider';
 import Navbar from '../Pages/Shared/Navbar/Navbar';
 
 const Dashbordlayout = () => {
+
+    const  {user} = useContext(AuthContext);
+    const url = `http://localhost:5000/users/${user?.email}`;
+
+    const {data } = useQuery({
+        queryKey: ['data', user?.email],
+        queryFn: async () => {
+            const res = await fetch(url, {
+                headers: {
+                    authorization: `bearer ${localStorage.getItem('accessToken')}`
+                }
+            });
+            const data = await res.json();
+            
+            return data;
+        }
+        
+    })
+console.log(data)
     return (
         <div>
             <Navbar></Navbar>
@@ -16,8 +37,10 @@ const Dashbordlayout = () => {
                 <div className="drawer-side">
                     <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-80 bg-base-100 text-base-content">
-                       
-                        <li><Link to="/dashboard"></Link>My Order</li>
+                      {
+                        data?.role === 'buyer' && <li><Link to="/dashboard"></Link>My Order</li>
+                      } 
+                        
                         <li><Link to="/dashboard/allusers"></Link>All Users</li>
                         
                     </ul>

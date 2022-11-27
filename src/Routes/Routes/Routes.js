@@ -10,6 +10,7 @@ import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Myoderbike from "../../Pages/Dashboard/Myoderbike/Myoderbike"
 import Not from "../../Pages/Not/Not";
+import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers"
 // import AllUsers from "../../Pages/Dashboard/AllUsers/AllUSERS.JS";
 
 
@@ -53,10 +54,10 @@ const router = createBrowserRouter([
                 path: '/dashboard',
                 element: <Myoderbike></Myoderbike>
             },
-            // {
-            //     path: '/dashboard/allusers',
-            //     element: <AllUsers></AllUsers>
-            // },
+            {
+                path: '/dashboard/allusers',
+                element: <AllUsers></AllUsers>
+            },
         ]
     },
     {

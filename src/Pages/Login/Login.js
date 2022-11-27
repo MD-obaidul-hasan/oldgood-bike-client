@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contextx/AuthProvider';
 import useTitle from '../../hooks/useTitle';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
     useTitle('Login')
@@ -11,10 +12,18 @@ const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { signIn } = useContext(AuthContext);
     const [loginError, setLoginError] = useState('');
+
+    const [loginUserEmail, setLoginUseEmail] = useState(' ');
+    const [token] = useToken(loginUserEmail);
     const location = useLocation();
     const navigate = useNavigate();
 
     const from = location.state?.from?.pathname || '/';
+
+    if(token){
+        navigate(from, { replace: true });
+
+    }
 
     const { providerLogin } = useContext(AuthContext);
 
@@ -37,8 +46,8 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                navigate(from, { replace: true });
-
+                setLoginUseEmail(data.email);
+               
             })
             .catch(error => {
                 console.log(error.message)
@@ -76,18 +85,7 @@ const Login = () => {
                         <label className="label"><span className="label-text">Forget password</span>
                         </label>
                     </div>
-                    <div className="form-control">
-                        <label className="label cursor-pointer">
-                            <span className="label-text">Buyer</span>
-                            <input type="radio" name="user" className="btn btn-accent w-full mt-1 checked:bg-red-500" checked />
-                        </label>
-                    </div>
-                    <div className="form-control">
-                        <label className="label cursor-pointer">
-                            <span className="label-text">Seller</span>
-                            <input type="radio" name="user" className="btn btn-accent w-full mt-1 checked:bg-blue-600" checked />
-                        </label>
-                    </div>
+                    
                     {/* <input className='btn btn-accent w-full mt-4' type="radio" name="user" />
                     <input className='btn btn-accent w-full mt-4' type="radio" name="user" /> */}
                     <input className='btn btn-accent w-full mt-4' value="Login" type="submit" />
