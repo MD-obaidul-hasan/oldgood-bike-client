@@ -11,10 +11,11 @@ const Home = () => {
         <div className='mx-5'>
             <Banners></Banners>
             <Banner></Banner>
-            <Advertiseitem></Advertiseitem>
             <About></About>
+            <Advertiseitem></Advertiseitem>
+            
             <Categories></Categories>
-            <Catalog></Catalog>
+            {/* <Catalog></Catalog> */}
             
 
         </div>

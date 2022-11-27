@@ -1,170 +1,80 @@
 [
     {
-      "_id": 1,
+      
       "image": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/103795/yzf-r15-right-front-three-quarter-7.jpeg?isig=0&q=80",
       "name": "Yahama R15",
+      "catagory": "1",
       "location": "Dhanmondi-15",
       "resaleprice": "120000tk",
       "orginalprice": "200000tk",
       "year_of_use": "2 year",
       "seller_Name": "abdul motaleb",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
+      "post_time": " 11-11-2022"
+      
     },
     {
-      "_id": 2,
+      
       "name": "Yahama Scooty",
+      "catagory": "1",
       "image": "https://www.scootyblog.com/wp-content/uploads/2021/01/yamaha-ray-zr-125.jpg",
       "location": "Badda-link road",
       "resaleprice": "100000tk",
       "orginalprice": "150000tk",
       "year_of_use": "1.2 year",
       "seller_Name": "sisty khatun",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
+      "post_time": " 11-12-2022"
+      
     },
     {
-      "_id": 3,
+      
       "name": "Honda vernation",
+      "catagory": "2",
       "image": "https://www.bikevaly.com/assets/img/honda-cb-hornet-160r-abs.webp",
       "location": "Gulshan 2",
       "resaleprice": "220000tk",
       "orginalprice": "300000tk",
       "year_of_use": "1.7 year",
       "seller_Name": "salma akter",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
+      "post_time": " 11-13-2022"
+      
     },
     {
-      "_id": 4,
+      
       "name": "Honda Scooty",
+      "catagory": "2",
       "image": "https://www.mototechindia.com/wp-content/uploads/2021/09/new-honda-forza-125.jpg",
       "location": "Dhanmondi-32",
       "resaleprice": "800000tk",
       "orginalprice": "120000tk",
       "year_of_use": "2.3 year",
       "seller_Name": "jahir khan",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
+      "post_time": " 11-09-2022"
+      
     },
     {
-      "_id": 5,
+      
       "image": "https://bangladesh.globalbajaj.com/-/media/Bajaj/Images/Pulsar/Product/Pulsar-150-Power-Reborn/Pulsar-150-2021-CnG/bajaj-pulsar-150cc-single-disk-motorcycle-price.png?h=997&la=en&w=1640&hash=E1A089C2984DB7275A5CA446DB6BE5A4",
       "name": "Bajaj Pulser",
+      "catagory": "3",
       "location": "old Dhaka",
       "resaleprice": "110000tk",
       "orginalprice": "200000tk",
       "year_of_use": "2.11 year",
       "seller_Name": "siraj khan",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
+      "post_time": " 11-17-2022"
+      
     },
     {
-      "_id": 6,
+      
       "image": "https://www.chetak.com/rev-images/chetak-21/home/premium-1.png",
       "name": "Bajaj scooty",
+      "catagory": "3",
       "location": "Dhanmondi-7",
       "resaleprice": "100000tk",
       "orginalprice": "220000tk",
       "year_of_use": "2.3 year",
       "seller_Name": "shirin akter",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM",
-        "11.00 AM - 11.30 AM",
-        "11.30 AM - 12.00 AM",
-        "1.00 PM - 1.30 PM",
-        "1.30 PM - 2.00 PM",
-        "2.00 PM - 2.30 PM",
-        "2.30 PM - 3.00 PM",
-        "3.00 PM - 3.30 PM",
-        "3.30 PM - 4.00 PM",
-        "4.00 PM - 4.30 PM",
-        "4.30 PM - 5.00 PM"
-      ]
+      "post_time": " 11-19-2022"
+      
     }
   ]

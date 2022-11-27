@@ -18,7 +18,8 @@ const Catalog = () => {
                         <h1 className=" text-gray text-4xl font-bold">Catalog are here</h1>
                         <p className=" text-gray py-6">Here our buyers , seller can get eassy recent model old but good quality bike . We try to give our consumer vest efforsts.</p>
                         {/* <button className="btn btn-primary">Get Started</button> */}
-                        <PrimarryButton> Catagory Details</PrimarryButton>
+                        {/* <PrimarryButton> Catagory Details</PrimarryButton> */}
+                        {/* <Link to={`/catagory/${id}`}><PrimarryButton>See  Details</PrimarryButton></Link> */}
                     </div>
                 </div>
             </div>

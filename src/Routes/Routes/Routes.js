@@ -37,6 +37,10 @@ const router = createBrowserRouter([
         {
             path: '/catagory',
             element: <Bikecatagory></Bikecatagory>
+        },
+        {
+            path: '/catagory/:id',
+            element: <Bikecatagory></Bikecatagory>
         }
       ]
 

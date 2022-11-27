@@ -22,7 +22,8 @@ const About = () => {
       seconhand bike <br/> for our bikers </h1>
       <p className="py-6">Here our buyers , seller can get eassy recent model old but good quality bike . We try to give our consumer vest efforsts. so keep with us and chose your chose bike in short hand price. thanks you.</p>
       {/* <button className="btn btn-primary">Get More info</button> */}
-      <PrimarryButton> Get More info</PrimarryButton>
+      
+      {/* <PrimarryButton> Get More info</PrimarryButton> */}
     </div>
   </div>
 </div>

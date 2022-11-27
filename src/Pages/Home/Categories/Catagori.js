@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PrimarryButton from '../../../Components/PrimarryButton/PrimarryButton';
+import Modal from '../../Bikecatagory/Model/Modal';
+
 
 const Catagori = ({catagori}) => {
-    const { name, description, img} = catagori;
+    const { name,id, description, img} = catagori;
     return (
         <div className="card  bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
@@ -13,10 +16,13 @@ const Catagori = ({catagori}) => {
                 <p>{description}</p>
                 <div className="card-actions">
                     {/* <button className="btn btn-primary">See More</button> */}
-                    <PrimarryButton>See  Details</PrimarryButton>
+                    
+                    <Link to={`/catagory/${id}`}><PrimarryButton>See  Details</PrimarryButton></Link>
                 </div>
+                
             </div>
         </div>
+        
     );
 };
 

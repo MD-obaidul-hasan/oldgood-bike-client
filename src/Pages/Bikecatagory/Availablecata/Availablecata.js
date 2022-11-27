@@ -4,10 +4,12 @@ import {format} from 'date-fns'
 import BikeBookoption from './BikeBookoption';
 import BookingModal from '../BookingModal/BookingModal';
 import { useQuery } from '@tanstack/react-query';
+import Modal from '../Model/Modal';
 
 
 const Availablecata = ( {selectedDate}) => {
     const [bike, setBike] = useState(null);
+    const [model, setModel] = useState(null);
 
 
     // const { data:catagoriesBikes = []} = useQuery({
@@ -42,17 +44,18 @@ const Availablecata = ( {selectedDate}) => {
                     catagoriesBikes.map(option => <BikeBookoption
                     key={option._id}
                     catagoriesBike={option}
-                    setBike={setBike}
+                    // setModel={setModel}
                     ></BikeBookoption>)
                 }
             </div>
             
-            { bike &&
+            <BookingModal></BookingModal>
+            {/* { bike &&
                 <BookingModal
                 selectedDate={selectedDate}
                 bike={bike}
                 setBike={setBike}
-            ></BookingModal>}
+            ></BookingModal>} */}
         </section>
     );
 };

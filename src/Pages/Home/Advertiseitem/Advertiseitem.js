@@ -8,7 +8,7 @@ const Advertiseitem = () => {
     <h2 className='text-3xl font-bold text-orange-600 text-center'> Advertise Bike</h2>
   </div>
     
-    <div className="card w-96 bg-base-100 shadow-xl">
+    {/* <div className="card w-96 bg-base-100 shadow-xl">
       <figure className="px-10 pt-10">
         <img src={img} alt="Shoes" className="rounded-xl" />
       </figure>
@@ -16,11 +16,10 @@ const Advertiseitem = () => {
         <h2 className="card-title">Honda </h2>
         <p>Honda hornet 150cc bike</p>
         <div className="card-actions">
-        <PrimarryButton>Buy Now</PrimarryButton>
-          {/* <button className="btn btn-primary">Buy Now</button> */}
+        <PrimarryButton>Buy Now</PrimarryButton>          
         </div>
       </div>
-    </div>
+    </div> */}
   </div>
   
   );
