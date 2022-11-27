@@ -38,9 +38,9 @@ const Myoderbike = () => {
                             bookings.map((booking, i) =><tr key={booking._id}>
                                 <th>{i+1}</th>
                                 <td>{booking.name}</td>
-                                <td>{booking.BikeModel}</td>
-                                <td>{booking.date}</td>
-                                <td>{booking.slot}</td>
+                                <td>{booking.price}</td>
+                                <td>{booking.item}</td>
+                                <td>{booking.email}</td>
                             </tr>)
                         }
                         
