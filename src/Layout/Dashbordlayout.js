@@ -7,7 +7,7 @@ import Navbar from '../Pages/Shared/Navbar/Navbar';
 const Dashbordlayout = () => {
 
     const  {user} = useContext(AuthContext);
-    const url = `http://localhost:5000/users/${user?.email}`;
+    const url = `https://oldgood-bike-server.vercel.app/users/${user?.email}`;
 
     const {data } = useQuery({
         queryKey: ['data', user?.email],
