@@ -14,7 +14,7 @@ const Availablecata = ( {selectedDate}) => {
 
     // const { data:catagoriesBikes = []} = useQuery({
     //     queryKey: ['bikes'],
-    //     queryFn: () => fetch('https://oldgood-bike-server.vercel.app/bikes')
+    //     queryFn: () => fetch('http://localhost:5000/bikes')
     //     .then(res => res.json())
     // })
 
@@ -22,7 +22,7 @@ const Availablecata = ( {selectedDate}) => {
     const { data : catagoriesBikes = []} = useQuery({
         queryKey: ['bikes'],
         queryFn: async() => {
-         const res =   await fetch('https://oldgood-bike-server.vercel.app/bikes');
+         const res =   await fetch('http://localhost:5000/bikes');
         const data = await res.json();
         return data
         }
@@ -31,7 +31,7 @@ const Availablecata = ( {selectedDate}) => {
 
 
     // useEffect(() =>{
-    //     fetch('https://oldgood-bike-server.vercel.app/bikes')
+    //     fetch('http://localhost:5000/bikes')
     //     .then(res => res.json())
     //     .then(data => setCatagoriesbike(data))
     // },[])

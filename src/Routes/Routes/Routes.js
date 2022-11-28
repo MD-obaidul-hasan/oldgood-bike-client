@@ -11,6 +11,7 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Myoderbike from "../../Pages/Dashboard/Myoderbike/Myoderbike"
 import Not from "../../Pages/Not/Not";
 import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers"
+import AdminRoute from "../AdminRoute/AdminRoute";
 // import AllUsers from "../../Pages/Dashboard/AllUsers/AllUSERS.JS";
 
 
@@ -56,7 +57,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/dashboard/allusers',
-                element: <AllUsers></AllUsers>
+                element:<AdminRoute> <AllUsers></AllUsers></AdminRoute>
             },
         ]
     },

@@ -11,7 +11,7 @@ const Bikecatagory = () => {
     const [bikes, setbikes] = useState([]);
 
     useEffect(() => {
-        fetch(`https://oldgood-bike-server.vercel.app/bikes?catagory=${id}`)
+        fetch(`http://localhost:5000/bikes?catagory=${id}`)
             .then(res => res.json())
             .then(data =>{
                 setbikes(data)

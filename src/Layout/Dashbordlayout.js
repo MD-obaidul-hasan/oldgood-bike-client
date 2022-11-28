@@ -2,12 +2,14 @@ import { useQuery } from '@tanstack/react-query';
 import React, { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { AuthContext } from '../Contextx/AuthProvider';
+import useAdmin from '../hooks/useAdmin';
 import Navbar from '../Pages/Shared/Navbar/Navbar';
 
 const Dashbordlayout = () => {
-
+    
     const  {user} = useContext(AuthContext);
-    const url = `https://oldgood-bike-server.vercel.app/users/${user?.email}`;
+    const [isAdmin] = useAdmin(user?.email)
+    const url = `http://localhost:5000/users/${user?.email}`;
 
     const {data } = useQuery({
         queryKey: ['data', user?.email],
@@ -40,8 +42,16 @@ console.log(data)
                       {
                         data?.role === 'buyer' && <li><Link to="/dashboard"></Link>My Order</li>
                       } 
-                        
+                      {/* {
+                        isAdmin && <>
                         <li><Link to="/dashboard/allusers"></Link>All Users</li>
+                        </>
+                      } */}
+                      {
+                        data?.role === 'admin' &&  <li><Link to="/dashboard/allusers"></Link>All Users</li>
+                      }
+                        
+                        
                         
                     </ul>
 
