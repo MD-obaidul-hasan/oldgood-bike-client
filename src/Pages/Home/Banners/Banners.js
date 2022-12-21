@@ -66,9 +66,9 @@ const Banner = () => {
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-24  top-1/4">
                     <h1 className='text-6xl font-bold text-white'>
-                        Switable <br />
-                        Price for <br />
-                        buy and selling old
+                        Eassy  <br />
+                        Way To <br />
+                        buy and selling
                     </h1>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 w-2/5 left-24  top-1/2">
