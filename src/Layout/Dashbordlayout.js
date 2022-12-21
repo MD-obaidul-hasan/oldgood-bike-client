@@ -9,7 +9,7 @@ const Dashbordlayout = () => {
     
     const  {user} = useContext(AuthContext);
     const [isAdmin] = useAdmin(user?.email)
-    const url = `http://localhost:5000/users/${user?.email}`;
+    const url = `https://oldgood-bike-server-md-obaidul-hasan.vercel.app/users/${user?.email}`;
 
     const {data } = useQuery({
         queryKey: ['data', user?.email],
@@ -50,6 +50,7 @@ console.log(data)
                       {
                         data?.role === 'admin' &&  <li><Link to="/dashboard/allusers"></Link>All Users</li>
                       }
+                      
                         
                         
                         

@@ -9,7 +9,7 @@ const Blog = () => {
             <div><h2 className='text-xl font-bold text-orange uppercase items-center text-center'> Welcome to our blog</h2></div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 my-20'>
             
-            <div className="card w-96 bg-gray-500 text-primary-content">
+            <div className="card w-96 bg-gray-300 text-primary-content">
                 
                 <div className="card-body">
                     <h2 className="card-title">What are the different ways to manage a state in a React application?</h2>

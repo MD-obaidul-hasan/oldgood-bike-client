@@ -49,7 +49,7 @@ const SignUp = () => {
 
     const saveUser = (name, email) => {
         const user = { name, email, role };
-        fetch('http://localhost:5000/users', {
+        fetch('https://oldgood-bike-server-md-obaidul-hasan.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -65,7 +65,7 @@ const SignUp = () => {
     }
 
     // const getuserToken = email =>{
-    //     fetch(`http://localhost:5000/jwt?email=${email}`)
+    //     fetch(`https://oldgood-bike-server-md-obaidul-hasan.vercel.app/jwt?email=${email}`)
     //     .then(res => res.json())
     //     .then(data =>{
     //         if(data.accessToken){

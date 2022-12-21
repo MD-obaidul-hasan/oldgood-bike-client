@@ -12,6 +12,7 @@ import Myoderbike from "../../Pages/Dashboard/Myoderbike/Myoderbike"
 import Not from "../../Pages/Not/Not";
 import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers"
 import AdminRoute from "../AdminRoute/AdminRoute";
+import AddProduct from "../../Pages/Dashboard/AddProduct/AddProduct";
 // import AllUsers from "../../Pages/Dashboard/AllUsers/AllUSERS.JS";
 
 
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
                 path: '/dashboard',
                 element: <Myoderbike></Myoderbike>
             },
+            // {
+            //     path: 'myproduct',
+            //     element: <AddProduct></AddProduct>
+            // },
             {
                 path: '/dashboard/allusers',
                 element:<AdminRoute> <AllUsers></AllUsers></AdminRoute>

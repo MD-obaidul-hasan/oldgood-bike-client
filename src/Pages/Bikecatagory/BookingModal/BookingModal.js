@@ -27,7 +27,7 @@ const handleBooking = event =>{
         metting,
     }
 
-    fetch('http://localhost:5000/bookings', {
+    fetch('https://oldgood-bike-server-md-obaidul-hasan.vercel.app/bookings', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

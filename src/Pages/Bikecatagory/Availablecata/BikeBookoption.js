@@ -23,7 +23,7 @@ const BikeBookoption = ({ bike, setModel }) => {
         }
         console.log(booking);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://oldgood-bike-server-md-obaidul-hasan.vercel.app/bookings', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -64,7 +64,7 @@ const BikeBookoption = ({ bike, setModel }) => {
                     <label htmlFor="modal" 
                     className="btn  items-center text-center "
                     // onClick={() => setModel( bike)}
-                    >open modal</label>
+                    >Book Now</label>
 
 
                     <input type="checkbox" id="modal" className="modal-toggle" />

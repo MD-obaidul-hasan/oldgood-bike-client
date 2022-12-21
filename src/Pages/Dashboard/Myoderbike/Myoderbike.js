@@ -7,7 +7,7 @@ import useTitle from '../../../hooks/useTitle';
 const Myoderbike = () => {
     useTitle('Dashboard')
     const  {user} = useContext(AuthContext);
-    const url = `http://localhost:5000/bookings?email=${user?.email}`;
+    const url = `https://oldgood-bike-server-md-obaidul-hasan.vercel.app/bookings?email=${user?.email}`;
 
     const {data: bookings = []} = useQuery({
         queryKey: ['bookings', user?.email],

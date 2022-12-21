@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 const AllUsers = () => {
     useTitle('AllUser')
     const  {user} = useContext(AuthContext);
-    const url = `http://localhost:5000/users?email=${user?.email}`;
+    const url = `https://oldgood-bike-server-md-obaidul-hasan.vercel.app/users?email=${user?.email}`;
     const {data: users = [], refetch} = useQuery({
         queryKey: ['users', user?.email],
         queryFn: async () => {
@@ -27,14 +27,14 @@ console.log(users)
     // const { data: users = [] } = useQuery({
     //     queryKey: ['users'],
     //     queryFn: async () => {
-    //         const res = await fetch('http://localhost:5000/users?');
+    //         const res = await fetch('https://oldgood-bike-server-md-obaidul-hasan.vercel.app/users?');
     //         const data = await res.json();
     //         return data;
     //     }
     // })
 
     const handleMakeAdmin = id => {
-        fetch(`http://localhost:5000/users/admin/${id}`,{
+        fetch(`https://oldgood-bike-server-md-obaidul-hasan.vercel.app/users/admin/${id}`,{
             method: 'PUT',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`
